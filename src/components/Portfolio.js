@@ -53,16 +53,18 @@ const SkillSection = () => (
       <div className="skills-grid">
         {[
           { name: 'Java', icon: <Code2 className="skill-icon" /> },
-          { name: 'Spring Boot', icon: <Monitor className="skill-icon" /> },
-          { name: 'Lua', icon: <BookOpen className="skill-icon" /> },
-          { name: 'Luau', icon: <Laptop2 className="skill-icon" /> },
+          { name: 'Lua', icon: <Code2 className="skill-icon" /> },
           { name: 'JavaScript', icon: <Code2 className="skill-icon" /> },
           { name: 'Python', icon: <Code2 className="skill-icon" /> },
-          { name: 'Git', icon: <Github className="skill-icon" /> },
+          { name: 'React', icon: <Code2 className="skill-icon" /> },
+          { name: 'Spring Boot', icon: <Monitor className="skill-icon" /> },
+          { name: 'Network Programming', icon: <Monitor className="skill-icon" /> },
           { name: 'Roblox Studio', icon: <Laptop2 className="skill-icon" /> },
           { name: 'Android', icon: <Laptop2 className="skill-icon" /> },
+          { name: 'Git', icon: <Github className="skill-icon" /> },
           { name: 'SQL', icon: <Database className="skill-icon" /> },
-          { name: 'Network Programming', icon: <Monitor className="skill-icon" /> }
+          { name: 'API Development', icon: <Clock className="skill-icon" /> },
+         
         ].map((skill, index) => (
           <div 
             key={index} 
@@ -111,24 +113,24 @@ const Portfolio = () => {
       icon: <Database className="project-icon" />
     },
     {
-      title: "Minecraft Modding",
-      description: "A Java-based modification for Minecraft 1.21, adding new gameplay elements and custom features.",
-      tags: ["Java", "Minecraft", "Modding", "Game Development"],
-      github: "https://github.com/ShadowOfHumanity/forgeModTrying",
+      title: "Jarvis AI Assistant",
+      description: "A Python-based AI assistant that can perform various tasks, such as opening tabs, searching the web, and chatting.",
+      tags: ["Python", "AI", "Multi-AI", "Automation", "Libraries"],
+      github: "https://github.com/ShadowOfHumanity/TryJarvisV1",
       icon: <Laptop2 className="project-icon" />
     },
     {
-      title: "Pi Generator",
-      description: "Efficient implementation of Pi number generation using various mathematical algorithms in Java.",
-      tags: ["Java", "Mathematics", "Algorithms"],
+      title: "Restful API - Budget App",
+      description: "A Spring Boot application that provides a RESTful API for a budget management app. Features user authentication and data persistence.",
+      tags: ["Java", "SQLite", "Algorithms", "Spring Boot", "API", "Security"],
       github: "https://github.com/ShadowOfHumanity/Pi-Generator",
       icon: <Clock className="project-icon" />
     },
     {
-      title: "Basic Python Apps",
-      description: "Python Based Apps for general use and automation, made for freelance. More projects avilable upon requests ",
-      tags: ["Python", "Comfort", "Automation", "Libraries"],
-      github: "https://github.com/ShadowOfHumanity/YTMP3",
+      title: "Image Recognition App",
+      description: "Java based application that uses AZURE Computer Vision API to recognize objects in images. Features real-time processing.",
+      tags: ["Java", "AI", "Computer Vision", "API", "AZURE"],
+      github: "https://github.com/ShadowOfHumanity/IMAGE_OCR_azure",
       icon: <Laptop2 className="project-icon" />
     },
     {
@@ -183,7 +185,7 @@ const Portfolio = () => {
 
       <header className="site-header">
         <div className="header-content">
-          <h1 className="header-logo">Dari</h1>
+          <h1 className="header-logo">Darian</h1>
           <button 
             className="mobile-menu-button"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -201,7 +203,7 @@ const Portfolio = () => {
       <section className="hero-section">
         <div className="hero-content">
           <h1 className="hero-title">Darian Baker</h1>
-          <p className="hero-subtitle">Backend Developer | Game Developer</p>
+          <p className="hero-subtitle">Fullstack Developer | Game Developer</p>
           <div className="hero-links">
             <a 
               href="https://github.com/ShadowOfHumanity" 
@@ -227,13 +229,13 @@ const Portfolio = () => {
         <div className="section-content">
           <h2 className="section-title">About Me</h2>
           <p className="about-text">
-            I'm a backend developer with expertise in multiple programming languages and frameworks.
+            I'm a Fullstack developer with expertise in multiple programming languages and frameworks.
             I specialize in Java development using Spring Boot and have experience in game development
             with Roblox using Lua/Luau. My passion lies in creating efficient, scalable solutions
-            and engaging gaming experiences.
+            and engaging peoples experiences.
           </p>
           <div className="skills-grid">
-            {['Backend Development', 'Game Development', 'Open Source'].map((skill, index) => (
+            {['Fullstack Development', 'Game Development', 'Open Source', 'Growing And Learning'].map((skill, index) => (
               <div 
                 key={index}
                 className="skill-card"
@@ -241,11 +243,13 @@ const Portfolio = () => {
                 {index === 0 && <Code2 className="skill-icon" />}
                 {index === 1 && <Laptop2 className="skill-icon" />}
                 {index === 2 && <BookOpen className="skill-icon" />}
+                {index === 3 && <Clock className="skill-icon" />}
                 <h3>{skill}</h3>
                 <p>
-                  {index === 0 && "Specialized in Java Spring Boot development with a focus on scalable applications"}
+                  {index === 0 && "Building scalable web applications with Spring Boot, Java, and SQL, & React"}
                   {index === 1 && "Creating immersive experiences on Roblox with Lua/Luau"}
                   {index === 2 && "Contributing to the developer community through various projects"}
+                  {index === 3 && "Always looking for new ways to grow and learn. Currently Advancing in JS Frameworks"}
                 </p>
               </div>
             ))}
@@ -310,7 +314,7 @@ const Portfolio = () => {
       </section>
 
       <footer className="site-footer">
-        <p>&copy; 2024 Darian Baker. All rights reserved.</p>
+        <p>&copy; 2025 Darian Baker. All rights reserved.</p>
       </footer>
     </div>
   );
