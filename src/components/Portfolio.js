@@ -52,12 +52,14 @@ const SkillSection = () => (
       <h2 className="section-title">Skills</h2>
       <div className="skills-grid">
         {[
+          { name: 'JavaScript', icon: <Code2 className="skill-icon" /> },
           { name: 'Java', icon: <Code2 className="skill-icon" /> },
           { name: 'Lua', icon: <Code2 className="skill-icon" /> },
-          { name: 'JavaScript', icon: <Code2 className="skill-icon" /> },
           { name: 'Python', icon: <Code2 className="skill-icon" /> },
           { name: 'React', icon: <Code2 className="skill-icon" /> },
+          { name: 'Bootstrap Css', icon: <Code2 className="skill-icon" /> },
           { name: 'Spring Boot', icon: <Monitor className="skill-icon" /> },
+          { name: 'NodeJs', icon: <Monitor className="skill-icon" /> },
           { name: 'Network Programming', icon: <Monitor className="skill-icon" /> },
           { name: 'Roblox Studio', icon: <Laptop2 className="skill-icon" /> },
           { name: 'Android', icon: <Laptop2 className="skill-icon" /> },
@@ -99,10 +101,10 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "TurnOffPC via Local Network",
-      description: "A Java application with HTML interface that enables remote PC shutdown over local network. Features secure authentication and cross-platform compatibility.",
-      tags: ["Java", "HTML", "Networking", "Security"],
-      github: "https://github.com/ShadowOfHumanity/TurnOffPC-viaLocalNetwork",
+      title: "JobsForMalta WebApp - in work",
+      description: "A Fullstack application using React TSX, Bootstrap CSS, NodeJS & ExpressJs, PostgreseSQL, and other security related libraries ",
+      tags: ["Fullstack", "React", "Javascript", "Security"],
+      github: "https://github.com/ShadowOfHumanity/JobsForMalta",
       icon: <Monitor className="project-icon" />
     },
     {
@@ -230,7 +232,7 @@ const Portfolio = () => {
           <h2 className="section-title">About Me</h2>
           <p className="about-text">
             I'm a Fullstack developer with expertise in multiple programming languages and frameworks.
-            I specialize in Java development using Spring Boot and have experience in game development
+            I specialize in Javascript & Java development using Spring Boot & NodeJs and have experience in game development
             with Roblox using Lua/Luau. My passion lies in creating efficient, scalable solutions
             and engaging peoples experiences.
           </p>
@@ -246,7 +248,7 @@ const Portfolio = () => {
                 {index === 3 && <Clock className="skill-icon" />}
                 <h3>{skill}</h3>
                 <p>
-                  {index === 0 && "Building scalable web applications with Spring Boot, Java, and SQL, & React"}
+                  {index === 0 && "Building scalable web applications with Spring Boot or NodeJs, SQL & React TSX"}
                   {index === 1 && "Creating immersive experiences on Roblox with Lua/Luau"}
                   {index === 2 && "Contributing to the developer community through various projects"}
                   {index === 3 && "Always looking for new ways to grow and learn. Currently Advancing in JS Frameworks"}
