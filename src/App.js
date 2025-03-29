@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Portfolio from './components/Portfolio';
-import './styles/styles.css';
 
 function App() {
-  return <Portfolio />;
+  useEffect(() => {
+    window.location.href = 'https://shadowofhumanity.github.io/Portfolio-New/';
+  }, []);
+  
+  return <div>Redirecting...</div>; // This briefly shows before redirection
 }
 
 export default App;
