@@ -1,12 +1,24 @@
 import React, { useEffect } from 'react';
-import Portfolio from './components/Portfolio';
+// Removed unused Portfolio import
 
 function App() {
   useEffect(() => {
     window.location.href = 'https://shadowofhumanity.github.io/Portfolio-New/';
   }, []);
   
-  return <div>Redirecting...</div>; // This briefly shows before redirection
+  // Added basic styling without Tailwind
+  const redirectStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    fontFamily: 'sans-serif',
+    fontSize: '24px',
+    color: '#0284c7',
+    backgroundColor: '#f0f9ff'
+  };
+  
+  return <div style={redirectStyle}>Redirecting to portfolio...</div>;
 }
 
 export default App;
