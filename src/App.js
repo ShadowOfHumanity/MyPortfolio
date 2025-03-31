@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    window.location.href = 'https://shadowofhumanity.github.io/Portfolio-New/';
+    window.location.href = 'https://darianbaker.eu/'; // Redirect to the portfolio URL
   }, []);
   
   // Added basic styling without Tailwind
